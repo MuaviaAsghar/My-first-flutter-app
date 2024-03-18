@@ -32,24 +32,24 @@ class Home extends StatelessWidget {
         ),
       ),
       body: 
-        child: Column(
+     Column(
           children: [
             searchBox(),
             Expanded(
               child: ListView(
                 children: [
                   Container(
-                      margin: EdgeInsets.only(top: 30, bottom: 40),
-                      child: Text("ToDo APP", style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600)),
+                      margin: const EdgeInsets.only(top: 30, bottom: 40),
+                      child: const Text("ToDo APP", style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600)),
                      ),
-                     ToDoItem()
+                     const ToDoItem()
                 ],
               ),
             )
           ],
         ),
-      ),
-    );
+      );
+    
   }
 }
 
